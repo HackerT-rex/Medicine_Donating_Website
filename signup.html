@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up - Medicine Donation</title>
+    <link rel="stylesheet" href="signupcss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+     </head>
+  <body>
+   
+    <form>
+      <img src="Blue Colorful Modern Charity Foundation Logo.png" class="logo">
+    <h1>Sign Up</h1>
+     </form>
+ 
+ <form action="/signup" method="post">
+     
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Sign Up">
+      <pre>    <a href="login.html">Already having account </a></pre>
+      <br>
+      <div class="other-options">
+        <span>Login with:</span>
+        <div class="providers">
+          <center>
+            <button class="logo1"  onclick="loginWithGoogle()"><img id="glogo" src="google-logo-9826.png" alt="Google"></button>
+            <button class="logo1" onclick="loginWithMicrosoft()"><img id="mlogo"  src="microsoft_logo.png" alt="Microsoft"></button>
+          </center>
+        </div>
+        <p><a href="login.html">Add a new account</a></p>
+      </div>
+    </form>
+  </body>
+</html>

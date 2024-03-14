@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicine Donation Website</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+            body, html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-image: url('1351187.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        footer {
+            background-color: white;
+            padding: 0px;
+            text-align: center;
+            position: absolute;
+            right:0;
+            left:0;
+            bottom:0;
+              }
+            
+        
+        header{
+           
+            padding: 5px;
+            text-align: justify;
+            
+        }
+        main {
+            margin: 3px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo.jpg" class="logo">
+            <header><h1>Donate, Heal And Care</h1></header>
+            
+            <ul>
+                <li><a href="#"></a>Features</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Contact</li>           
+            </ul>
+
+            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="user-pic" onclick="toggleMenu()">
+        
+            <div class="sub-menu-wrap" id="subMenu">
+                
+                <div class="sub-menu">
+                    
+                    <div class="user-info"> <img src="profile.png"> </div>
+                    <hr>
+                    
+                    <a href="index.html"  class="sub-menu-link">
+                        <img src="profile.png">
+                        <p>Edit Profile</p>
+                        <span></span>
+                    </a>
+                    
+                    <a href="#"  class="sub-menu-link">
+                        <img src="setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    
+                    <a href="#"  class="sub-menu-link">
+                        <img src="help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    
+                    <a href="login.html"  class="sub-menu-link">
+                        <img src="logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+    
+    
+    <h2>Welcome to our Medicine Donation Website</h2>         
+    
+    
+    <div id="category">
+        <h1>Choose the option:</h1>
+        <form class="box">
+            <br>
+            <button class="category">
+                <a href="donar.html">donar</a>
+            </button>
+            <br>
+            <button class="category">reciver</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>Copyright &copy; 2024 Medicine Donation Website</p>
+    </footer>
+</body>
+</html>

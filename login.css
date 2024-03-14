@@ -1,0 +1,96 @@
+body {
+    background-image: url('https://images5.alphacoders.com/135/1351189.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    
+    
+}
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(160, 152, 152, 0.185);
+    background: transparent;
+}
+label {
+    margin-bottom: 10px;
+    color: whitesmoke;
+    
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffffea;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #2e8a76;
+    
+}
+.logo{
+    width: 100px;
+    border-radius: 50%;
+   
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    right: 0;
+    left:0;
+    top: 0;
+   color:white;
+   font-size: xx-large;}
+   a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
