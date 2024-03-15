@@ -18,16 +18,3 @@ function loginWithMicrosoft() {
   window.location.href = "website.html";
 }
 
-function goto_buyer()
-{
-  console.log("Selector as Buyer");
-
-  window.location.href="buyer.html";
-}
-
-function goto_donor()
-{
-  console.log("Selector as Donor");
-  
-  window.location.href = "donar.html";
-}

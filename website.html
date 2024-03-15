@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <style>
        
             body, html {
@@ -95,34 +94,57 @@
             </div>
         </nav>
     </div>
+
     <script>
         let subMenu = document.getElementById("subMenu");
-
         function toggleMenu(){
             subMenu.classList.toggle("open-menu");
         }
     </script>
     
+    <script>
+        document.addEventListener("DOMContentLoaded", function()
+        {
+            // Function to redirect to the donor page
+            function goto_donor()
+            {
+                window.location.href = 'donar.html';
+            }
+            
+            // Function to redirect to the receiver page
+            
+            function goto_buyer()
+            {
+                window.location.href = 'buyer.html';
+            }
+            
+            // Add event listener to the donor button
+            document.getElementById('donor-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                goto_donor(); // Redirect to the donor page
+            });
+            
+            // Add event listener to the receiver button
+            document.getElementById('receiver-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                goto_buyer(); // Redirect to the receiver page
+            });
+        });
+    </script>
     
     <h2>Welcome to our Medicine Donation Website</h2>         
     
     
     <div id="category">
         <h1>Choose the option:</h1>
-        <form class="box">
+        <form class="box" id="category-form">
             <br>
-            <button class="category" onclick="goto_donor()">Donor</button>
+            <button class="category" id="donor-btn">Donor</button>
             <br>
-            <button class="category" onclick="goto_buyer()">Reciver</a></button>
+            <button class="category" id="receiver-btn">Receiver</button>
         </form>
-
-        <script>
-            function goto_donor()
-            {
-                window.location.href = "donar.html";
-            }
-        </script>
     </div>
+    
 
     <footer>
         <p>Copyright &copy; 2024 Medicine Donation Website</p>
