@@ -40,7 +40,6 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-
 }
 nav ul li a{
     color: white;
@@ -56,7 +55,7 @@ nav ul li a{
     transition: max-height 0.5s;
 }
 .sub-menu-wrap.open-menu{
-max-height: 400px;
+    max-height: 400px;
 }
 .sub-menu{
     background: black;
@@ -71,9 +70,9 @@ max-height: 400px;
     font-weight: 500;
 }
 .user-info img{
-width: 60px;
-border-radius: 50%;
-margin-right: 15px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 .sub-menu hr{
     border: 0;
@@ -106,11 +105,11 @@ margin-right: 15px;
     transition: transform 0.5s;
 }
 .sub-menu-link:hover{
-transform: translateX(5px);
+    transform: translateX(5px);
 }
 .sub-menu-link:hover p
 {
-font-weight: 600;
+    font-weight: 600;
 }
 
 .sub-menu-link:hover {
@@ -138,7 +137,6 @@ header h1 {
     color: white;
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 h2{
     font-style: oblique;
@@ -149,14 +147,13 @@ h2{
 }
 
 p1{
-   color: black;
-   position: fixed;
-   text-align: center;
-   right: 0;
-   left:0;
-   bottom: 0;
-   margin-bottom: 100;
-   
+    color: black;
+    position: fixed;
+    text-align: center;
+    right: 0;
+    left:0;
+    bottom: 0;
+    margin-bottom: 100;
     font-style: italic;
 }
 
@@ -195,31 +192,33 @@ main ul {
     gap: 20px;
 }
 
-#category {
-    display: flex;
-    justify-content: center; /* horizontally center */
-    align-items: center; /* vertically center */
-    height: 50vh; /* make sure the div covers the entire viewport height */
-}
-
-.category
+#pic1,#pic2,#pic3
 {
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    font-size: xx-large;
-    font: bolder;
-    color:blue;
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    border:white;
+    border-radius: 70%;
 }
 
-footer {
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    p{
-        color: black;
-    
-    }
-   
-
+#pic1
+{
+    position: relative;
+    top: 50px;
+    left: 60%;
 }
+
+#pic2
+{
+    position: relative;
+    top: 70px;
+    left: 70%;
+}
+
+#pic3
+{
+    position: relative;
+    top: 100px;
+    left: 64%;
+}
+
