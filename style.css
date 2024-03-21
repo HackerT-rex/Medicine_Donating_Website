@@ -130,6 +130,8 @@ header {
     background-color: black;
     display: flex;
     text-align: center;
+    justify-content: left;
+    text-justify:auto;
 }
 
 header h1 {
@@ -196,13 +198,15 @@ main ul {
 {
     width: 350px;
     height: 350px;
-    background-color: black;
     border:white;
     border-radius: 70%;
 }
 
 #pic1
 {
+    background-image: url("nathan-dumlao-Xavq7lKj5j8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
     position: relative;
     top: 50px;
     left: 60%;
@@ -210,6 +214,9 @@ main ul {
 
 #pic2
 {
+    background-image: url("Soch-Page-intro-img.jpg");
+    background-size:cover;
+    background-position:center;
     position: relative;
     top: 70px;
     left: 70%;
@@ -222,3 +229,21 @@ main ul {
     left: 64%;
 }
 
+.Selection
+{
+    position: relative;
+    top: 450px;
+    left: 250px;
+}
+
+.Selection img
+{
+    width: 250px;
+    height: 250px;
+}
+
+.Selection button
+{
+    background-color: transparent;
+    border-style: hidden;
+}

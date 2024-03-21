@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://images5.alphacoders.com/135/1351189.png');
+    background-image: url("1351187.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,21 +14,16 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
-    
-    
 }
 form {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.223);
     width: 300px;
     padding: 30px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(160, 152, 152, 0.185);
-    background: transparent;
+    
+    box-shadow: 0 0 10px rgba(214, 210, 210, 0.09);
 }
 label {
     margin-bottom: 10px;
