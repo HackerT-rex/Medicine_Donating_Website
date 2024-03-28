@@ -5,16 +5,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('your_webpage.html')
+    return render_template('buyer.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
+    buyer_name = request.form['buyer_name']
     medicine_name = request.form['medicine_name']
     quantity = request.form['quantity']
+    buyer_address = request.form['buyer_address']
+
     
-    with open('medicine_donations.csv', mode='a', newline='') as file:
+    with open('buyer_records.csv', mode='a', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow([medicine_name, quantity])
+        writer.writerow([buyer_name,buyer_address,medicine_name,quantity])
 
     return 'Medicine donation submitted successfully!'
 

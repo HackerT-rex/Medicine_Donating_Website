@@ -86,5 +86,31 @@
             <input type="submit" value="Place Order">
         </form>
     </div>
+
+    <script>
+        document.addEventListener('buyer_details',function()
+        {
+            const form = document.querySelector('form');
+
+            form.addEventListener('sumbit',function(event)
+            {
+                event.preventDefault();
+
+                const buyerName = document.getElementById('buyer_name').value;
+                const buyerAddress = document.getElementById("buyer_address").value;
+                const medicineName = document.getElementById('medicine_name').value;
+                const quantity = document.getElementById('quantity').value;
+
+                const formData = {
+                    buyerName: buyerName,
+                    buyerAddress: buyerAddress,
+                    medicineName: medicineName,
+                    quantity: quantity
+                };
+
+                console.log(fromData);
+            });
+        });
+    </script>
 </body>
 </html>
