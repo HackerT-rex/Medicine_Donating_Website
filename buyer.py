@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template('buyer.html')
 
-@app.route('/submit', methods=['POST'])
+@app.route('/buyer', methods=['POST'])
 def submit():
     buyer_name = request.form['buyer_name']
     medicine_name = request.form['medicine_name']

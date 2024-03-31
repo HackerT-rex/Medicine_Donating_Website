@@ -204,7 +204,7 @@ main ul {
 
 #pic1
 {
-    background-image: url("nathan-dumlao-Xavq7lKj5j8-unsplash.jpg");
+    background-image: url("source/nathan-dumlao-Xavq7lKj5j8-unsplash.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -214,7 +214,7 @@ main ul {
 
 #pic2
 {
-    background-image: url("Soch-Page-intro-img.jpg");
+    background-image: url("source/Soch-Page-intro-img.jpg");
     background-size:cover;
     background-position:center;
     position: relative;
