@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Sign Up - Medicine Donation</title>
-    <link rel="stylesheet" href="static/signupcss.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signupcss.css') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="static/script.js"></script>
@@ -10,17 +10,14 @@
   <body>
    
     <form>
-      <img src="static/source/Blue Colorful Modern Charity Foundation Logo.png" class="logo">
+      <img src="{{ url_for('static', filename='/source/Blue Colorful Modern Charity Foundation Logo.png') }}" class="logo">
     <h1>Sign Up</h1>
      </form>
  
- <form action="/signup" method="post">
+ <form action="signup" method="post">
      
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
 
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
