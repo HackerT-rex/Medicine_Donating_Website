@@ -9,7 +9,7 @@ def home():
     return render_template('home.html')
 
 # Route for the buyer form
-@app.route('/buyer', methods=['GET', 'POST'])
+@app.route('/buyer.html', methods=['GET', 'POST'])
 def buyer():
     if request.method == 'POST':
         save_to_csv(request.form)
@@ -17,12 +17,12 @@ def buyer():
     return render_template('buyer.html')
 
 # Route for the donor form
-@app.route('/donor', methods=['GET', 'POST'])
+@app.route('/donar.html', methods=['GET', 'POST'])
 def donor():
     if request.method == 'POST':
         save_to_csv(request.form)
         return redirect(url_for('home'))
-    return render_template('donor.html')
+    return render_template('donar.html')
 
 # Route for the profile form
 @app.route('/profile', methods=['GET', 'POST'])

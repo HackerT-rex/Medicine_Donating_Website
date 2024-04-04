@@ -9,7 +9,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-image: url("donorb.jpg");
+        background-image: url("{{ url_for('static', filename='/source/donorb.jpg') }}");
         background-position: center;
         background-size: cover;
     }
@@ -18,16 +18,16 @@
         max-width:300px;
         margin: 20px auto;
         padding: 20px;
-        border: 1px solid #ccc;
+        border: 1px solid #ffffff06;
         border-radius: 15px;
         position: relative;
         top: 100px;
         left: 20px;
         background-color:transparent;
         border-width: 1px;
-        border-color: rgba(0, 208, 255, 0.571);
+        border-color: rgba(0, 0, 0, 0.196);
         border-style: groove;
-        box-shadow:3px 3px 3px 4px rgba(0, 153, 255, 0.453);
+        box-shadow:3px 3px 3px 4px rgba(0, 0, 0, 0.305);
     }
     .form-group {
         margin-bottom: 20px;
@@ -45,15 +45,15 @@
         border-radius: 15px;
     }
     input[type="submit"] {
-        background-color: #00a2ff8d;
-        color: white;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
     input[type="submit"]:hover {
-        background-color: #0059ff;
+        background-color: #00000098;
     }
 </style>
 </head>
