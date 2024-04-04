@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Medicine Donation Website</title>
-    <link rel="stylesheet" href="static/home.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -51,7 +51,7 @@
 <body>
     <div class="hero">
         <nav>
-            <img src="logo.jpg" class="logo">
+            <img src="{{ url_for('static', filename='/source/logo.jpg') }}" class="logo">
             <header><h1>Donate, Heal And Care</h1></header>
             
             <ul>
@@ -67,31 +67,31 @@
                 <div class="sub-menu">
                     
                     <div class="user-info">
-                        <img src="profile.png">
+                        <img src="{{ url_for('static', filename='/source/profile.png') }}">
                         <span></span>
                     </div>
                     <hr>
                     
                     <a href="index.html"  class="sub-menu-link">
-                        <img src="profile.png">
+                        <img src="{{ url_for('static', filename='/source/profile.png') }}">
                         <p>Edit Profile</p>
                         <span></span>
                     </a>
                     
                     <a href="#"  class="sub-menu-link">
-                        <img src="setting.png">
+                        <img src="{{ url_for('static', filename='/source/setting.png') }}">
                         <p>Settings & Privacy</p>
                         <span></span>
                     </a>
                     
                     <a href="#"  class="sub-menu-link">
-                        <img src="help.png">
+                        <img src="{{ url_for('static', filename='/source/help.png') }}">
                         <p>Help & Support</p>
                         <span></span>
                     </a>
                     
                     <a href="login.html"  class="sub-menu-link">
-                        <img src="logout.png">
+                        <img src="{{ url_for('static', filename='/source/logout.png') }}">
                         <p>Logout</p>
                         <span></span>
                     </a>
@@ -142,11 +142,11 @@
     <div class="Selection">
         <form>
             <button type="button" id="donor"><a href="donar.html">
-                <img src="static/source/donor_png.png" alt="Donor">
+                <img src="{{ url_for('static', filename='/source/donor_png.png') }}" alt="Donor">
             </a></button>
 
             <button type="button" id="receiver"><a href="buyer.html">
-                <img src="static/source/reciver.png" alt="receiver">
+                <img src="{{ url_for('static', filename='/source/reciver.png') }}" alt="receiver">
             </a></button>
         </form>
     </div>
