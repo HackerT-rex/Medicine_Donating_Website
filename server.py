@@ -1,5 +1,7 @@
 from flask import *
+import sqlite3
 import csv
+
 
 app = Flask(__name__)
 # Function to save form data to a CSV file
@@ -8,6 +10,8 @@ def buyer_save_to_csv(data):
         writer = csv.writer(file)
         writer.writerow(data.values())
 
+def bu(data):
+    
 def donar_save_to_csv(data):
     with open('donar_form_data.csv', mode='a', newline='') as file:
         writer = csv.writer(file)
