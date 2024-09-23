@@ -10,8 +10,7 @@ def buyer_save_to_csv(data):
         writer = csv.writer(file)
         writer.writerow(data.values())
 
-def bu(data):
-    
+
 def donar_save_to_csv(data):
     with open('donar_form_data.csv', mode='a', newline='') as file:
         writer = csv.writer(file)
